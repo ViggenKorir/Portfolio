@@ -5,14 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
   <meta name="description" content="A growing collection of ready to use components for the CSS framework Bootstrap 5">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="img/TagIcon.svg" />
   <meta name="author" content="Holger Koenemann">
   <meta name="generator" content="Eleventy v2.0.0">
   <meta name="HandheldFriendly" content="true">
-  <title>404</title>
+  <title>Contact</title>
   <link rel="stylesheet" href="css/theme.min.css">
 
   <style>
@@ -53,6 +50,11 @@
       /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
   </style>
+<script>
+  function submit() {
+    alert("Submitted");
+  }
+</script>
 
 </head>
 
@@ -61,7 +63,7 @@
   <div class="h-100 container-fluid">
     <div class="h-100 row d-flex align-items-stretch">
 
-      <div class="col-12 d-flex align-items-start flex-column px-vw-5">
+      <div class="col-12 col-md-7 col-lg-6 d-flex align-items-start flex-column px-vw-5">
 
         <header class="mb-auto py-vh-2 col-12">
           <a class="navbar-brand pe-4 fs-4" href="/">
@@ -74,20 +76,37 @@
 
         </header>
         <main class="mb-auto col-12">
-          <h1>404</h1>
+          <h1>Get in touch</h1>
 
-          <h1 class="display-1 fw-bold">Uuuups, something is broken...</h1>
-          <p class="lead">The page you are looking for doesn't exist or has been moved.</p>
-          <a href="index.html" class="link-fancy">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left"
-              viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
-            </svg>
-            Go back to frontpage</a>
+          <form class="row" method="post" onsubmit="alert('Message Submitted!')"&& action="/">
+            <div class="col-12 col-lg-10 col-xl-8">
+              <div class="mb-3">
+                <label for="messageBox" class="form-label">Name *</label>
+                <input type="text" class="form-control form-control-lg" id="messageBox" required="true">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address *</label>
+                <input type="email" class="form-control form-control-lg" id="exampleInputEmail1"
+                  aria-describedby="emailHelp" required="true">
+              </div>
+              <div class="mb-3">
+                <label for="messageBox" class="form-label">Message *</label>
+                <input type="text" class="form-control form-control-lg" id="messageBox" required="true">
+              </div>
+            
+              <div class="mb-3 form-check py-3">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Company/Organisation?</label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-xl" 
+              >Submit</button>
+            </div>
+          </form>
 
         </main>
       </div>
+
+      <div class="col-5 col-md-2 col-lg-6 bg-cover" style="background-image: url('./img/dev.jpeg');"></div>
 
     </div>
     <footer>
@@ -100,7 +119,6 @@
         </div>
       </div>
     </footer>
-
   </div>
 </body>
 
